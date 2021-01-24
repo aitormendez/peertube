@@ -22,13 +22,10 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
-	return (
-		<p { ...useBlockProps.save() }>
-			{ __(
-				'Peertube video – hello from the saved content!',
-				'peertube'
-			) }
-		</p>
-	);
+// export default function Save( { attributes, className } ) {
+// return <div className={ className }>{ attributes.message }</div>;
+// }
+
+export default function Save( { attributes, className } ) {
+    return <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src="https://peertube.manalejandro.com/videos/embed/{ attributes.identificador }" frameborder="0" allowfullscreen></iframe>;
 }

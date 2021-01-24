@@ -33,6 +33,25 @@ import save from './save';
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 registerBlockType( 'e451/peertube', {
+
+	attributes: {
+		message: {
+			type: 'string',
+			source: 'text',
+			selector: 'div',
+		},
+		identificador: {
+			type: 'string',
+			source: 'text',
+			selector: 'div',
+		},
+		instancia: {
+			type: 'string',
+			source: 'text',
+			selector: 'div',
+		},
+	},
+
 	/**
 	 * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
 	 */
@@ -79,4 +98,5 @@ registerBlockType( 'e451/peertube', {
 	 * @see ./save.js
 	 */
 	save,
+
 } );

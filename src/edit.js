@@ -29,10 +29,16 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
-	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Peertube video – hello from the editor!', 'peertube' ) }
-		</p>
-	);
+import { TextControl } from '@wordpress/components';
+
+export default function Edit( { attributes, className, setAttributes } ) {
+    return (
+        <div className={ className }>
+            <TextControl
+                label={ __( 'Identificador', 'peertube' ) }
+                value={ attributes.identificador }
+                onChange={ ( val ) => setAttributes( { identificador: val } ) }
+            />
+        </div>
+    );
 }
