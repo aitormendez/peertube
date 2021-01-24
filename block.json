@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "e451/peertube",
+	"title": "Peertube video",
+	"category": "embed",
+	"icon": "video-alt3",
+	"description": "Insertar contenido de peertube",
+	"textdomain": "peertube",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
