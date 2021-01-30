@@ -1,0 +1,16 @@
+{
+	"name": "aitormendez/peertube",
+	"description": "",
+	"keywords": ["wordpress", "plugin"],
+	"homepage": "https://github.com/aitormendez/peertube",
+	"authors": [
+	  {
+		"name": "WPML",
+		"homepage": "https://e451.net/"
+	  }
+	],
+	"type": "wordpress-plugin",
+	"require": {
+	  "php": ">=5.6"
+	}
+  }
