@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Peertube video
  * Description:     Insertar contenido de peertube
- * Version:         1.0.0-alpha
+ * Version:         1.0.1
  * Author:          Aitor Méndez
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licens
