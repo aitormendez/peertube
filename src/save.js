@@ -27,5 +27,6 @@ import { useBlockProps } from '@wordpress/block-editor';
 // }
 
 export default function Save( { attributes, className } ) {
-    return <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src="https://peertube.manalejandro.com/videos/embed/{ attributes.identificador }" frameborder="0" allowfullscreen></iframe>;
+	let url = 'https://peertube.manalejandro.com/videos/embed/' + attributes.identificador;
+	return <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src={ url } frameborder="0" allowfullscreen></iframe>;
 }
