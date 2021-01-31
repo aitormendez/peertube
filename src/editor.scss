@@ -6,4 +6,19 @@
 
 .wp-block-e451-peertube {
 	border: 1px dotted #f00;
+	padding: 2em;
+	border-radius: 4px;
+
+	input[type="text"] {
+		padding: 1em;
+	}
+
+	.components-base-control__help {
+		margin-top: 0;
+		color: #000;
+	}
+
+	#inspector-text-control-3__help {
+		margin-bottom: 0;
+	}
 }

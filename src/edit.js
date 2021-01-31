@@ -32,17 +32,20 @@ import './editor.scss';
 import { TextControl } from '@wordpress/components';
 
 export default function Edit( { attributes, className, setAttributes } ) {
+	const blockProps = useBlockProps();
     return (
-        <div className={ className }>
+        <div { ...blockProps }>
             <TextControl
                 label={ __( 'Identificador', 'peertube' ) }
                 value={ attributes.identificador }
-                onChange={ ( val ) => setAttributes( { identificador: val } ) }
+				onChange={ ( val ) => setAttributes( { identificador: val } ) }
+				help={ 'algo parecido a: 2e3d35ba-f42f-49be-8bc2-97a770785570' }
             />
 			<TextControl
                 label={ __( 'Instancia', 'peertube' ) }
                 value={ attributes.instancia }
-                onChange={ ( val ) => setAttributes( { instancia: val } ) }
+				onChange={ ( val ) => setAttributes( { instancia: val } ) }
+				help={ 'algo parecido a: https://video.nogafam.es' }
             />
         </div>
     );
