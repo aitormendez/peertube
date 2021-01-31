@@ -28,5 +28,5 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function Save( { attributes, className } ) {
 	let url = attributes.instancia + '/videos/embed/' + attributes.identificador;
-	return <iframe className={ className } width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src={ url } frameborder="0" allowfullscreen></iframe>;
+	return <iframe className={ className } sandbox="allow-same-origin allow-scripts allow-popups" src={ url } frameborder="0" allowfullscreen></iframe>;
 }
