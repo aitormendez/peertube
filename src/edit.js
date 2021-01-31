@@ -39,6 +39,11 @@ export default function Edit( { attributes, className, setAttributes } ) {
                 value={ attributes.identificador }
                 onChange={ ( val ) => setAttributes( { identificador: val } ) }
             />
+            <TextControl
+                label={ __( 'Instancia', 'peertube' ) }
+                value={ attributes.instancia }
+                onChange={ ( val ) => setAttributes( { instancia: val } ) }
+            />
         </div>
     );
 }
