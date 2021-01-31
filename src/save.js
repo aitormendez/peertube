@@ -27,6 +27,6 @@ import { useBlockProps } from '@wordpress/block-editor';
 // }
 
 export default function Save( { attributes, className } ) {
-	let url = 'https://peertube.manalejandro.com/videos/embed/' + attributes.identificador;
+	let url = attributes.instancia + '/videos/embed/' + attributes.identificador;
 	return <iframe width="560" height="315" sandbox="allow-scripts allow-popups" src={ url } frameborder="0" allowfullscreen></iframe>;
 }

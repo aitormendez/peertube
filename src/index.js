@@ -35,19 +35,12 @@ import save from './save';
 registerBlockType( 'e451/peertube', {
 
 	attributes: {
-		message: {
-			type: 'string',
-			source: 'text',
-			selector: 'div',
-		},
 		identificador: {
 			type: 'string',
-			source: 'text',
 			selector: 'div',
 		},
 		instancia: {
 			type: 'string',
-			source: 'text',
 			selector: 'div',
 		},
 	},
