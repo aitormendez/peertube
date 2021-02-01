@@ -9,6 +9,17 @@
 	background-color: var(--wp-admin-theme-color);
 	color: #fff;
 	padding: 2px;
+	position: relative;
+	overflow: hidden;
 	width: 100%;
-	height: auto;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+	.iframe-block{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+	}
 }
