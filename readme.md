@@ -1,4 +1,4 @@
-=== Peertube video ===
+# Embed Peertube video
 Contributors:      Aitor Méndez
 Tags:              block, peertube
 Requires at least: 5.6.0
@@ -10,11 +10,11 @@ License URI:       https://www.gnu.org/licens
 
 WordPress plugin para Insertar contenido de peertube
 
-#Description
+# Description
 
 Añade un bloque de Gutenberg para incrustar vídeo en WordPress desde una instancia de peertube.
 
-## Instalación
+# Instalación
 
 ### Normal
 
