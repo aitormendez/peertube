@@ -10,7 +10,7 @@ License URI:       https://www.gnu.org/licens
 
 WordPress plugin para Insertar contenido de peertube
 
-# Description
+# Descripción
 
 Añade un bloque de Gutenberg para incrustar vídeo en WordPress desde una instancia de peertube.
 
